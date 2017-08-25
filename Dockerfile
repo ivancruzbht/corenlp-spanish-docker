@@ -19,7 +19,8 @@ RUN mv $CORENLP_SPANISH_MODELS$CORENLP_ARCHIVE_VERSION-models.jar $CORENLP_PATH
 RUN rm $CORENLP_ARCHIVE
 RUN rm corenlp.sha1
 
-
 WORKDIR $CORENLP_PATH
 
 EXPOSE 9000
+
+CMD java -mx4g -cp stanford-corenlp-3.8.0.jar:stanford-spanish-corenlp-2017-06-09-models.jar edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators tokenize,ssplit,pos,parse,ner 9000

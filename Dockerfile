@@ -1,5 +1,7 @@
 FROM java:8
 
+MAINTAINER Ivan Cruz <ivancruz.bht@gmail.com>
+
 ENV CORENLP_ARCHIVE_VERSION=2017-06-09
 ENV CORENLP_SPANISH_MODELS=stanford-spanish-corenlp-
 ENV CORENLP_ARCHIVE=stanford-corenlp-full-${CORENLP_ARCHIVE_VERSION}.zip \

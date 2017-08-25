@@ -1,0 +1,1 @@
+Dockerized Stanford CoreNLP with spanish models
